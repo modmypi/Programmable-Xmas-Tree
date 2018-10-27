@@ -8,11 +8,19 @@ As the name of the file implies, this simply turns on all the LEDS on the board.
 
 ### alt.py
 
-This script will alternate the green leds and red leds. The top white led is allways on
+This script will alternate the green leds and red leds. The top white led is allways on.
 
 ### ants.py
 
 This script simply turns each led on then off in sequence.
+
+### christmastree.py
+
+The [GPIO Zero](https://github.com/RPi-Distro/python-gpiozero) based class which can be used for building your own LED operations.
+
+### random_leds.py
+
+This script will randomly pulse all LEDs on the board.
 
 ## Download and Run
 

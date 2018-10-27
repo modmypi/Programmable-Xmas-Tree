@@ -1,23 +1,26 @@
-from RPi import GPIO
+from christmastree import ChristmasTree
 from time import sleep
 
-GPIO.setmode(GPIO.BCM)
+def reds_on(leds):
+    for led in [1, 3, 4, 6, 8]:
+        leds[led].on()
+def greens_on(leds):
+    for led in [0, 2, 5, 7, 9]:
+        leds[led].on()
 
-LEDS = (11,16,17,18,19,20,21,22,23,24,12)
-GREEN = (11,17,20,22,24)
-RED = (16,18,19,21,23)
-WHITE = (12)
-
-GPIO.setup(LEDS, GPIO.OUT, initial=0)
-GPIO.output(WHITE,1)
+tree = ChristmasTree()
+tree.star.on()
+leds = tree.leds
 
 try:
-	while True:
-		GPIO.output(GREEN,1)
-		sleep(.5)
-		GPIO.output(GREEN,0)
-		GPIO.output(RED,1)
-		sleep(.5)
-		GPIO.output(RED,0)
+    tree.star.on()
+    while True:
+        tree.baubles.off()
+        reds_on(leds)
+        sleep(.5)
+        tree.baubles.off()
+        greens_on(leds)
+        sleep(.5)
 except:
-	GPIO.cleanup()
+        tree.off()
+        tree.close()

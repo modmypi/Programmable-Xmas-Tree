@@ -1,24 +1,14 @@
-from RPi import GPIO
+from christmastree import ChristmasTree
 from time import sleep
 
-GPIO.setmode(GPIO.BCM)
-
-LEDS = (11,16,17,18,19,20,21,22,23,24,12)
-
-GPIO.setup(LEDS, GPIO.OUT, initial=0)
+tree = ChristmasTree()
 
 try:
-	i = 0
-	led_length = len(LEDS)
-	while i < led_length:
-		if i == 0:
-			GPIO.output(LEDS[led_length-1],0)
-		else:
-			GPIO.output(LEDS[i-1],0)
-		GPIO.output(LEDS[i],1)
-		i += 1
-		if i == led_length:
-			i = 0
-		sleep(.2)
+	leds = tree.leds
+	while True:
+	    for led in leds:
+		    led.on()
+		    sleep(.2)
+		    led.off()
 except:
-	GPIO.cleanup()
+	tree.close()

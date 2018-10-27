@@ -16,7 +16,7 @@ This script simply turns each led on then off in sequence.
 
 ### christmastree.py
 
-The GPIO Zero based class which can be used for building your own LED operations.
+The [GPIO Zero](https://github.com/RPi-Distro/python-gpiozero) based class which can be used for building your own LED operations.
 
 ### random_leds.py
 

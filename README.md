@@ -14,6 +14,14 @@ This script will alternate the green leds and red leds. The top white led is all
 
 This script simply turns each led on then off in sequence.
 
+### christmastree.py
+
+The GPIO Zero based class which can be used for building your own LED operations.
+
+### random_leds.py
+
+This script will randomly blink all LEDs on the board.
+
 ## Download and Run
 
 To download the sample code simply run the following command:

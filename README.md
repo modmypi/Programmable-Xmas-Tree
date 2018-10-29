@@ -1,4 +1,4 @@
-# Programmable Xmas Tree - Sample Code
+# Programmable Christmas Tree - Sample Code
 
 ![alt text](https://github.com/modmypi/Programmable-Xmas-Tree/blob/master/github_christmastree.png "Christmas Tree")
 

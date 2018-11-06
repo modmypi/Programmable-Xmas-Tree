@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/modmypi/Programmable-Xmas-Tree/blob/master/github_christmastree.png "Christmas Tree")
 
-Here you will find four different code examples to get you started with the [Christmas Tree Solder kit](https://www.modmypi.com/raspberry-pi/led-displays-and-drivers-1034/led-boards-1040/christmas-tree-solder-kit) and the [Programmable Christmas Tree](https://www.modmypi.com/raspberry-pi/led-displays-and-drivers-1034/led-boards-1040/christmas-tree-programmable-kit) from ModMyPi along with a GPIO Zero compatible class extension to easily build your own light shows.
+Here you will find four different code examples to get you started with the [Programmable Christmas Tree](https://www.modmypi.com/raspberry-pi/led-displays-and-drivers-1034/led-boards-1040/christmas-tree-programmable-kit) from ModMyPi along with a GPIO Zero compatible class extension to easily build your own light shows.
 
 ### all_on.py
 

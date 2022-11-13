@@ -30,4 +30,7 @@ class ChristmasTree(LEDBoard):
             _order=('baubles', 'star'),
             pin_factory=pin_factory
             )
+        
+        self.red_leds =  tuple(self.leds[i] for i in [1, 3, 4, 6, 8])
+        self.green_leds = tuple(self.leds[i] for i in [0, 2, 5, 7])
                 
